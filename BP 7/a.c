@@ -6,13 +6,13 @@
 
 int main(void)
 {
-	double x = -101;
-	int y = -INT_MAX + 1;
+	double x = 2;
+	int y = 6;
 
-	printf("%lf : %x\n", pow(x, y), pow(x, y));
-	printf("%lf : %x\n", xpow(x, y), xpow(x, y));
+	printf("%i : %x\n", pow(x, y), pow(x, y));
+	printf("%i : %x\n", xpow(x, y), xpow(x, y));
 	if(pow(x, y) == xpow(x, y))
-		printf("kek");
+		printf("works");
 
 
 	return 0;

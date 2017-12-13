@@ -46,6 +46,7 @@ void xpow_tests(void)
 {
 	printf("XPOW TESTS (SUCCESS == 1 / FAILURE == 0)\n");
 	printf("=================================================\n");
+		printf("\n\nxpow(2, 6): \t%lf\t%lf\n", xpow(2, 6), pow(2, 6));
 	printf("Test (xpow(2, 6)): \t\t%i\t", xpow(2, 6) == pow(2, 6));
 	xpow(2, 6);
 	printf("errno: %i\n", errno);
@@ -58,21 +59,27 @@ void xpow_tests(void)
 	printf("Test (xpow(0, -2)): \t\t%i\t", xpow(0, -2) == 0);
 	xpow(0, -2);
 	printf("errno: %i\n", errno);
+		printf("\n\nxpow(2, 6): \t%lf\t%lf\n", xpow(-3, 647), pow(-3, 647));
 	printf("Test (xpow(-3, 647)): \t\t%i\t", xpow(-3, 647) == pow(-3, 647));
 	xpow(-3, 647);
 	printf("errno: %i\n", errno);
+		printf("\n\nxpow(-5, 442): \t%lf\t%lf\n", xpow(-5, 442), pow(-5, 442));
 	printf("Test (xpow(-5, 442)): \t\t%i\t", xpow(-5, 442) == pow(-5, 442));
 	xpow(-5, 442);
 	printf("errno: %i\n", errno);
+		printf("\n\nxpow(-101, INT_MAX): \t%lf\t%lf\n", xpow(-101, INT_MAX), pow(-101, INT_MAX));
 	printf("Test (xpow(-101, INT_MAX)): \t%i\t", xpow(-101, INT_MAX) == pow(-101, INT_MAX));
 	xpow(-101, INT_MAX);
 	printf("errno: %i\n", errno);
+		printf("\n\nxpow(-101, INT_MAX-1): \t%lf\t%lf\n", xpow(-101, INT_MAX-1), pow(-101, INT_MAX-1));
 	printf("Test (xpow(-101, INT_MAX-1)): \t%i\t", xpow(-101, INT_MAX-1) == pow(-101, INT_MAX-1));
 	xpow(-101, INT_MAX-1);
 	printf("errno: %i\n", errno);
+		printf("\n\nxpow(-101, -INT_MAX): \t%lf\t%lf\n", xpow(-101, -INT_MAX), pow(-101, -INT_MAX));
 	printf("Test (xpow(-101, -INT_MAX)): \t%i\t", xpow(-101, -INT_MAX) == pow(-101, -INT_MAX));
 	xpow(-101, -INT_MAX);
 	printf("errno: %i\n", errno);
+		printf("\n\nxpow(-101, -INT_MAX+1): \t%lf\t%lf\n", xpow(-101, -INT_MAX+1), pow(-101, -INT_MAX+1));
 	printf("Test (xpow(-101, -INT_MAX+1)): \t%i\t", xpow(-101, -INT_MAX+1) == pow(-101, -INT_MAX+1));
 	xpow(-101, -INT_MAX+1);
 	printf("errno: %i\n", errno);
